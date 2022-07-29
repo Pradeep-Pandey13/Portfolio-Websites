@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+header {
+  height: 100vh;
+  width: 100%;
+  background: #212224;
+}
+nav {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo a {
+  color: white;
+  font-size: 25px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-weight: 600;
+}
+span {
+  color: #ffd43b;
+}
+
+.nav-links ul li {
+  list-style-type: none;
+  display: inline-flex;
+  padding: 0px 16px;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: white;
+}
+.nav-links ul li a:hover {
+  color: #ffe066;
+  transition: 0.3s;
+}
+.btn a {
+  background: #ffd43b;
+  text-decoration: none;
+  color: black;
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 26px;
+}
+.btn a:hover {
+  opacity: 0.7;
+  transition: 0.4s;
+}
+.content-main {
+  width: 1100px;
+
+  /* max-width: 100%; */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text h1 {
+  color: white;
+  font-size: 45px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+.text p {
+  color: white;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 35px;
+}
+
+.btn1 {
+  text-decoration: none;
+  color: white;
+  border: 2px solid #ffd43b;
+  padding: 10px 28px;
+  border-radius: 30px;
+}
+.btn1:hover {
+  color: black;
+  background: #ffd43b;
+  transition: 0.4s;
+}
+.links {
+  position: absolute;
+  right: 80px;
+  bottom: 0;
+}
+.links ul {
+  display: inline-flex;
+  margin: 25px auto;
+  text-align: center;
+}
+.links ul li {
+  list-style-type: none;
+  margin: 0 12px;
+}
+.links ul li i {
+  color: white;
+  font-size: 25px;
+}
+.links ul li i:hover {
+  cursor: pointer;
+}

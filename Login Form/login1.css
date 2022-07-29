@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #2a9d8f;
+}
+
+.box {
+  position: absolute;
+  width: 340px;
+  height: 400px;
+  background-color: #264653;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 45px 40px;
+  text-align: center;
+  border-radius: 25px;
+}
+.box h1 {
+  text-align: center;
+  font-size: 30px;
+  padding: 0 0 30px;
+  font-weight: bold;
+  color: white;
+}
+.box p {
+  color: white;
+  font-weight: 500;
+  margin-right: 170px;
+  margin-bottom: 10px;
+}
+.box input {
+  margin-bottom: 15px;
+  width: 100%;
+}
+.box input[type="text"],
+.box input[type="password"] {
+  border: none;
+  outline: none;
+  background: #000;
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+.box input[type="submit"] {
+  border: none;
+  display: block;
+  color: #000;
+  outline: none;
+  padding: 10px;
+  border-radius: 28px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.box input[type="submit"]:hover {
+  opacity: 0.7;
+  transition: 0.4s;
+  cursor: pointer;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: #edf6f9;
+  line-height: 25px;
+}
+a:hover {
+  transition: 0.3s;
+  color: #2a9d8f;
+}

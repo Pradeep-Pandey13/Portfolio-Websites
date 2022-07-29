@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+}
+.header {
+  padding: 10px 8%;
+}
+.header h2 {
+  color: white;
+  font-size: 40px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 12px 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: #ffd43b;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: ease 1s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.content {
+  margin-left: 8%;
+  margin-top: 12%;
+}
+.container h1 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.container h2 span {
+  color: #ffd43b;
+}
+
+.content p {
+  color: white;
+  line-height: 22px;
+}
+
+.content a {
+  background-color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  color: #000;
+  margin: 30px 8px;
+  padding: 10px 28px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: 1s;
+}
+.content a:hover {
+  background: #ffd43b;
+  transition: 1s;
+}
+.img {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  width: 40%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.img img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.img:hover .image {
+  left: 45%;
+}
+span {
+  color: #ffd43b;
+}

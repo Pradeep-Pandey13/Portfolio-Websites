@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+}
+
+.side {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background: #219ebc;
+  left: -250px;
+  transition: all 0.5s;
+}
+.side h2 {
+  color: #333;
+  font-size: 25px;
+  text-align: center;
+  background-color: #90e0ef;
+  line-height: 60px;
+  font-weight: 700;
+  /* line-height: 1px; */
+}
+.side ul a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  line-height: 70px;
+  color: white;
+  padding-left: 40px;
+  text-transform: capitalize;
+  font-size: 17px;
+  border-top: 1px solid #00b4d8;
+  transition: transform 0.2s ease-in;
+}
+
+ul li:hover a {
+  transform: translateX(-8px);
+}
+#check {
+  display: none;
+}
+label #bar,
+label #times {
+  position: absolute;
+  cursor: pointer;
+  background: #219ebc;
+  border-radius: 5pxxxx;
+}
+
+label #bar {
+  color: white;
+  font-size: 40px;
+  left: 40px;
+  top: 25px;
+  padding: 5px 10px;
+
+  transition: all 0.5s;
+}
+
+label #times {
+  z-index: 11;
+  color: white;
+  padding: 4px 8px;
+  left: -200px;
+  top: 15px;
+  font-size: 25px;
+  transition: all 0.5s;
+}
+
+#check:checked ~ .side {
+  left: 0;
+}
+#check:checked ~ label #bar {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #times {
+  left: 200px;
+}
